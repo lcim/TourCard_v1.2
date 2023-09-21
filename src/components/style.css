@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
-}
+} 
 
-/* .navbar-container {
-    display: block;
-    margin: auto;
-    padding: auto;
-} */
+.app{
+  margin-block-start: 8rem;
+}
 
 .navbar {
   background-color: #f55f55;
@@ -20,7 +18,10 @@
   align-items: center;
   height: 4.5rem;
   color: #eeeeee;
-  margin-block-end: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .card-container {

@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     // 'plugin:react/recommended',
+    // I replaced the above with the below
     '@vitejs/plugin-react',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
