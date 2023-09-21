@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .navbar-container {
+    display: block;
+    margin: auto;
+    padding: auto;
+} */
+
+.navbar {
+  background-color: #f55f55;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  color: #eeeeee;
+  margin-block-end: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  column-gap: 3.3rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.8rem;
+  margin-inline: 0.3rem;
+  margin-block-end: 4rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 3px 3px 2px 1px #eeeeee, -3px -3px 2px 1px #eeeeee;
+}
+.tour-img-wrapper{
+    background-color: rgba(245, 95, 85, 0.1);
+}
+.tour-img-wrapper,
+.textuals {
+  min-width: 290px;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  border-radius: 0.9rem;
+  box-shadow: 3px 3px 2px 1px #eeeeee, -3px -3px 2px 1px #eeeeee;
+  padding: 3%;
+  text-overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textuals {
+  flex-direction: column;
+  margin-top: 0;
+  padding-block: 0.1rem;
+  height: 400px;
+}
+
+.tour-img {
+  width: 100%;
+  height: 98%;
+  border-radius: 0.9rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+  /* text-align: left; */
+}
+
+.fa-location-dot {
+  color: #f55f55;
+}
+
+.country {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.location-link {
+  padding-inline-start: 0.6rem;
+  font-size: 0.7rem;
+  color: #444555;
+  opacity: 0.7;
+}
+
+.title {
+  color: #2b283a;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-block-start: 0.5rem;
+}
+
+.season {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 12px;
+  opacity: 0.7;
+  color: #2b283a;
+}
+
+.description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* text-align: left; */
+  color: #2b283a;
+}
+
+@media screen and (min-width: 400px) {
+  .card-container {
+    max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    max-width: unset;
+    width: 100%;
+    margin-inline: auto;
+    /* border-radius: 15px; */
+  }
+
+  .textuals,
+  .tour-img-wrapper {
+    width: 46%;
+    margin-block: 1rem;
+    height: 360px;
+  }
+
+  .navbar {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-container {
+    max-width: 980px;
+  }
+}
